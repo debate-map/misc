@@ -142,6 +142,8 @@ export RUSTUP_TOOLCHAIN=kapnightly-2024-02-14; RUSTFLAGS="-C linker=/usr/bin/cla
       Timing report saved to /home/individual/venryx/app/target-remote/cargo-timings/cargo-timing-20240326T093534Z.html
     Finished release [optimized] target(s) in 1m 27s
 
+NOTE: I also tried this "Remote, release, modded" config, except with all the "wrap_slow_macros!" proc-macros in my project commented out (see branch "comment_wrap_slow_macros" in debate-map repo); got the same timings. (did this to confirm that "multi-layered" macros weren't interfering somehow with the modded rust's caching)
+
 
 
 
